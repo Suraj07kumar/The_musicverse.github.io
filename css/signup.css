@@ -1,0 +1,47 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(../2.jpeg);
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+}
+.container{
+	position: absolute;
+	color: whitesmoke;
+	top: 30%;
+	left: 22%;
+	padding: 10px;
+}
+.container h1{
+	border-bottom: 2px solid whitesmoke;
+	padding: 13px 0;
+}
+.box{
+	width: 100%;
+	margin: 32px 0px;
+	margin-left: 25px;
+}
+.box i{
+	width: 25px;
+	position: relative;
+}
+.box input{
+	width: 80%;
+	font-size: 15px;
+	border: none;
+	outline: none;
+	background: none;
+	text-align: center;
+	color: whitesmoke;
+	padding: 5px 0px;
+}
+.btn{
+	cursor: pointer;
+	padding: 6px;
+	font-size: 14px;
+	background: none;
+	color: whitesmoke;
+}
