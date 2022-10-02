@@ -1,5 +1,3 @@
-@media only screen and (min-width: 480px) {
-	
 *{
 	margin: 0;
 	padding: 0;
@@ -97,4 +95,4 @@ ul li.active a{
 	opacity:20%;
 	cursor: default;
 }
-}
+
