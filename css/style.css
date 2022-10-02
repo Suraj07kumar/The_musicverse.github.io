@@ -1,4 +1,3 @@
-@media screen and (max-width: 481px){
 *{
 	margin: 0;
 	padding: 0;
@@ -95,6 +94,5 @@ ul li.active a{
 	font-size: 35px;
 	opacity:20%;
 	cursor: default;
-}
 }
 
