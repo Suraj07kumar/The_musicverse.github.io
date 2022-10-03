@@ -119,6 +119,7 @@ nav .fa{
 	.footer{
 		margin-top: 150px;
 		padding: 20px;
+		Z-index:2 
 	}
 
 }
