@@ -5,15 +5,26 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>MUSIC VERSE</title>
 	<script src="https://kit.fontawesome.com/8840d1f5be.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<ul>
-		<li class="active"><a href="#">HOME</a></li>
-		<li><a href="about.html">ABOUT</a></li>
-		<li><a href="contact.html">CONTACT</a></li>
-	</li>
-	</ul>
+	<div class="header">
+
+		<nav>
+			<div class="nav-links" id="nav-links">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		  </nav>  
+		  
+	</div>
+	
 	<div class="title">
 		<h3>Hello,it's me</h3>
 		<h1>SURAJ</h1>
@@ -21,19 +32,21 @@
 	</div>
 	<div class="button">
 		<a href="login.html"class="btn" target="_blank">Login</a>
-		OR
-		<a href="signin.html"class="btn" target="_blank">Sign up</a>
+		<a href="signup.html"class="btn" target="_blank">Sign up</a>
 	</div>
-	<div class="social">
-		<ul>
-			<li><a href="https://www.facebook.com/profile.php?id=100008541155179" target="_blank" class="fa fa-facebook"></a></li>
-			<li><a href="https://twitter.com/surajku33950811" target="_blank" class="fa fa-twitter"></a></li>
-			<li><a href="https://www.linkedin.com/in/suraj-kumar-06253922b/" target="_blank" class="fa fa-linkedin"></a></li>
-			<li><a href="https://www.instagram.com/k_u_m_a_r_s_u_r_a_j/" target="_blank" class="fa fa-instagram"></a></li>
-		</ul>
-	</div>
+	
 	<div class="logo">
 		<h1>MUSIC VERSE</h1>
 	</div>
+	<div class="footer">
+		<ul>
+			<li><i class="fa fa-facebook"></i> <a href="https://www.facebook.com/profile.php?id=100008541155179" target="_blank" ></a></li>
+			<li><i class="fa fa-twitter"></i><a href="https://twitter.com/surajku33950811" target="_blank" ></a></li>
+			<li> <i class="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/suraj-kumar-06253922b/" target="_blank"></a></li>
+			<li><i class="fa fa-instagram"></i> <a href="https://www.instagram.com/k_u_m_a_r_s_u_r_a_j/" target="_blank" ></a></li>
+		</ul>
+	</div>
+	<script src="main.js"></script>
 </body>
 </html>
+
