@@ -1,50 +1,124 @@
-@media only screen and (min-width: 480px) {
-  body {
-    background-color: lightblue;
-  }
-}
+
 *{
 	margin: 0;
 	padding: 0;
 }
 body{
-	background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(../6.jpeg);
+	
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url(images/6.jpeg);
+	width: 100%;
 	background-position: center;
 	background-size: cover;
 	height: 100vh;
+	color: whitesmoke;
+
 }
-ul{
-	float: right;
+
+.header{
+	display: flex;
+	justify-content: space-between;
+}
+ nav .nav-links{
 	list-style-type: none;
 	margin: 50px;
 }
-ul li{
-	display: inline-block;
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 20px;
+    position: relative;
 }
-ul li a{
-	text-decoration: unset;
+.nav-links ul li a{
+    text-decoration: unset;
 	color: #fff;
 	padding: 10px 30px;
 	font-size: 20px;
-	border-radius: 1px;
 	font-family: sans-serif;
+	border-radius: 1px;
 	border: 1px solid-transparent;
 }
-ul li a:hover{
+
+.nav-links ul li a:hover{
 	background-color: #fff;
 	color: #000;
 	transition: 1.0s ease;
 }
-ul li.active a{
-	color: #000;
-	background-color: #fff;
-}
+
 .details{
 	color: white;
-	position: absolute;
-	top: 21%;
-	left: 10%;
+	position: relative;
+	margin-top: 40px;
+	margin-left: 100px;
+
 }
 .details h1{
 	padding: 10px 0px;
+}
+.footer{
+	display: flex;
+	justify-content: center;
+	margin-top: 100px;
+	margin-bottom: 10px;
+}
+.footer ul{
+	display: flex;
+	list-style-type: none;
+	margin-top: 30px;
+	font-size: 20px;
+}
+.footer li{
+    display: inline-block;
+	color: white;
+    padding: 8px 20px;
+    position: relative;
+}
+.footer li:hover{
+	transform: scale(1,1.2);
+}
+nav .fa{
+    display: none;
+}
+@media (max-width: 700px){
+
+	*{
+		position: relative;
+		overflow-x: hidden;
+	}
+	.nav-links ul {
+        display: block;
+		margin-top: 0;
+    }
+    nav .nav-links {
+
+		position: fixed;
+		background-color: #cccc;
+		margin: 0;
+        height:100vh;
+        width: 200px;
+        right:-200px;
+		z-index: 2;
+        text-align: left;
+        transition: .5s;
+    }
+    nav .fa{
+        display: block;
+        color: white;
+        text-align: right;
+        padding: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+	.details{
+		padding: 10px;
+		margin: 10px;
+	}
+	.footer{
+		margin-top: 150px;
+		padding: 20px;
+	}
+
 }
