@@ -1,18 +1,27 @@
 <!DOCTYPE html>
-<html>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>About</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/about.css">
 </head>
 <body>
-	<ul>
-		<li><a href="index.html">HOME</a></li>
-		<li class="active"><a href="#">ABOUT</a></li>
-		<li><a href="contact.html">CONTACT</a></li>
-	</li>
-	</ul>
+	<div class="header">
+
+		<nav>
+			<div class="nav-links" id="nav-links">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		  </nav>  
+		  
+	</div>
 	<div class="details">
 		<h1>Hey,</h1>
 		I am Suraj. Welcome to my vlog page.<br> 
@@ -26,5 +35,14 @@
 		how to find key of song and some basics about <br>musical isntruments which will help you to find the key 
 		or scale of the song.
 	</div>
+	<div class="footer">
+		<ul>
+			<li><i class="fa fa-facebook"></i> <a href="https://www.facebook.com/profile.php?id=100008541155179" target="_blank" ></a></li>
+			<li><i class="fa fa-twitter"></i><a href="https://twitter.com/surajku33950811" target="_blank" ></a></li>
+			<li> <i class="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/suraj-kumar-06253922b/" target="_blank"></a></li>
+			<li><i class="fa fa-instagram"></i> <a href="https://www.instagram.com/k_u_m_a_r_s_u_r_a_j/" target="_blank" ></a></li>
+		</ul>
+	</div>
+	<script src="main.js"></script>
 </body>
 </html>
