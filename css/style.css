@@ -5,22 +5,31 @@
 }
 body
 {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url(../5.jpeg);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url(images/5.jpeg);
+	width: 100%;
 	background-position: center;
 	background-size: cover;
 	height: 100vh;
 	color: whitesmoke;
 }
-ul{
-	float: left;
+
+.header{
+	display: flex;
+	justify-content: space-between;
+}
+ nav .nav-links{
 	list-style-type: none;
 	margin: 50px;
 }
-ul li{
-	display: inline-block;
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 20px;
+    position: relative;
 }
-ul li a{
-	text-decoration: unset;
+.nav-links ul li a{
+    text-decoration: unset;
 	color: #fff;
 	padding: 10px 30px;
 	font-size: 20px;
@@ -28,19 +37,19 @@ ul li a{
 	border-radius: 1px;
 	border: 1px solid-transparent;
 }
-ul li a:hover{
+
+.nav-links ul li a:hover{
 	background-color: #fff;
 	color: #000;
 	transition: 1.0s ease;
 }
-ul li.active a{
-	background-color: #fff;
-	color: #000;
-}
+
 .title{
-	position: absolute;
-	top: 30%;
-	left: 20%;
+	display: block;
+	position: relative;
+	padding-top: 100px;
+	padding-left: 300px;
+	padding-bottom: 10px;
 }
 .title h1{
 	font-size: 60px;
@@ -51,18 +60,18 @@ ul li.active a{
 }
 .title h2{
 	font-size: 20px;
-	-webkit-transition: 0.8s ease;
+	transition: 0.5s;
 }
 .title h2:hover{
-	transition: 0.8s ease;
 	background-color: #fff;
 	color: #000;
 	padding: 10px 30px;
 }
 .button{
-	position: absolute;
-	top: 61%;
-	left: 50%;
+	display: block;
+	text-align: center;
+	margin-left: 420px;
+	margin-top: 40px;
 	transform: translate(-50%,-50%);
 }
 .btn{
@@ -80,20 +89,110 @@ ul li.active a{
 	transition: 0.8s ease;
 	border: 1px solid #000;
 }
-.social{
-	position: absolute;
-	left: 70%;
-	top: -5px;
-	font-size: 10px;
-}
-.logo{
+
+.logo {
 	color: whitesmoke;
-	position: absolute;
-	top: 75%;
-	left: 28%;
+	position: relative;
+	margin-top: 50px;
+	text-align: center;
 	letter-spacing: 15px;
-	font-size: 35px;
+	font-size: 40px;
 	opacity:20%;
 	cursor: default;
 }
+.footer{
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+.footer ul{
+	display: flex;
+	list-style-type: none;
+	margin-top: 30px;
+	font-size: 20px;
+}
+.footer li{
+    display: inline-block;
+	color: white;
+    padding: 8px 20px;
+    position: relative;
+}
+.footer li:hover{
+	transform: scale(1,1.2);
+}
+nav .fa{
+    display: none;
+}
+@media (max-width: 700px){
 
+	
+	.nav-links ul {
+        display: block;
+		margin-top: 0;
+    }
+	.nav-links ul li a{
+		cursor: pointer;
+
+	}
+	.nav-links ul li a:hover{
+		background-color: #fff;
+		color: #000;
+		transition: 1.0s ease;
+	}
+    nav .nav-links {
+
+		position: fixed;
+		background-color: #cccc;
+		margin: 0;
+        height:100vh;
+        width: 200px;
+        right:-200px;
+		z-index: 2;
+        text-align: left;
+        transition: .5s;
+    }
+    nav .fa{
+        display: block;
+        color: white;
+        text-align: right;
+        padding: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+
+	.title{
+
+		display: block;
+		padding: 0;
+		margin-top: 70px;
+		margin-left: 20px;
+		text-align: left;
+	
+	}
+	
+	.button{
+
+		display: inline-block;
+		margin-left: 10px;
+		transform: none;
+
+	}
+	
+	.logo{
+		padding: 10px;
+		display: flex;
+		text-align: center;
+		font-size: 30px;
+		letter-spacing: 10px;
+	}
+	.footer{
+		display: flex;
+		justify-content: center;
+		margin: 0;
+		
+	}
+}
